@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 
 export default function Hero() {
@@ -18,7 +19,9 @@ export default function Hero() {
         </h1>
 
         <div className="cursor-pointer">
+          <Link href={'/Home'}>
           <button className="cursor-pointer hover:translate-0.5 w-[250px] h-[65px] bg-[#4c7f70] rounded-[20px] text-center justify-start text-white text-[22px] font-normal font-['Poppins']">Get Started - It's Free!</button>
+          </Link>
         </div>
       </div>
     </section>
